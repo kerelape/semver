@@ -38,10 +38,11 @@
     <url>https://github.com/kerelape/semver</url>
   </scm>
   <distributionManagement>
-    <site>
-      <id>github-pages</id>
-      <url>https://github.com/kerelape/semver</url>
-    </site>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/kerelape/semver</url>
+    </repository>
   </distributionManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
