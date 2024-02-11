@@ -74,4 +74,12 @@ class VersionTest {
                 NoSuchElementException::class.java,
             ),
         ).affirm()
+
+    @Test
+    fun `ignores 'v' prefix`() =
+        Assertion(
+            "Ignores 'v' prefix",
+            Version("v1.2.3").Major(),
+            IsNumber(1),
+        ).affirm()
 }
