@@ -75,6 +75,15 @@ class VersionTest {
             ),
         ).affirm()
 
+    /**
+     * Test, that [Version] ignores leading 'v', which is
+     * not a part of Semantic Versioning convention, but is
+     * a common practice.
+     *
+     * Due to: [#1](https://github.com/kerelape/semver/issues/1)
+     *
+     * @since 0.2
+     */
     @Test
     fun `ignores 'v' prefix`() =
         Assertion(
